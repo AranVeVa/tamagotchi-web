@@ -121,8 +121,7 @@ function GameScreen({ state, actions }: { state: GameState; actions: ReturnType<
             <section className="grid grid-cols-1 gap-4 sm:grid-cols-[1fr_1.2fr]">
                 <PetSprite mood={mood} name={state.petName} />
                 <div className="flex flex-col gap-3">
-                    <EventToast event={state.activeEvent} simHour={state.simHour} petName={state.petName} />
-                    <StatusBars stats={state.stats} />
+                    <EventToast event={state.activeEvent} petName={state.petName} />                    <StatusBars stats={state.stats} />
                 </div>
             </section>
 
